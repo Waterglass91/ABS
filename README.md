@@ -7,6 +7,7 @@ Site vitrine en français, anglais et arabe, adapté aux téléphones, tablettes
 ## Contenu
 
 - Services de conciergerie et accompagnement personnel.
+- Transitions immersives entre les services sur ordinateur, tablette et téléphone, avec textes et navigation adaptés aux petits écrans. La préférence de réduction des animations est respectée.
 - Carte de membre interactive et adhésion annuelle à 4 999 £.
 - Contact français sur la version française ; contact britannique sur les versions anglaise et arabe.
 - Brochures originales françaises et anglaises de 2025, consultables et téléchargeables.

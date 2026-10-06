@@ -235,11 +235,11 @@ body.menu-open .menu-foot{opacity:1;transition-delay:.8s}
   .destinations{font-size:9.5px;letter-spacing:.2em;margin-bottom:18px}
   .destinations span{padding:0 9px}
 }
-.no-anim .voyage-stage{height:auto;overflow:visible}
-.no-anim .v-intro{position:relative;padding-bottom:60px}
-.no-anim .v-hint,.no-anim .rim,.no-anim .edge,.no-anim .doors,.no-anim .seam,.no-anim .ring,.no-anim .voyage-hud{display:none}
-.no-anim .scene{position:relative;height:100vh;min-height:560px}
-.no-anim .portal{clip-path:none!important}
+.no-anim:not(.services-motion) .voyage-stage{height:auto;overflow:visible}
+.no-anim:not(.services-motion) .v-intro{position:relative;padding-bottom:60px}
+.no-anim:not(.services-motion) .v-hint,.no-anim:not(.services-motion) .rim,.no-anim:not(.services-motion) .edge,.no-anim:not(.services-motion) .doors,.no-anim:not(.services-motion) .seam,.no-anim:not(.services-motion) .ring,.no-anim:not(.services-motion) .voyage-hud{display:none}
+.no-anim:not(.services-motion) .scene{position:relative;height:100vh;min-height:560px}
+.no-anim:not(.services-motion) .portal{clip-path:none!important}
 
 
 /* Voyages : défilé de destinations dans la dernière scène */
@@ -248,7 +248,7 @@ body.menu-open .menu-foot{opacity:1;transition-delay:.8s}
 .tour-names span{position:absolute;left:0;right:0;opacity:0}
 .tour-names::before{content:"";position:absolute;left:50%;top:-34px;width:1px;height:22px;background:var(--or-clair)}
 .js:not(.no-anim) .tour-names{opacity:0}
-.no-anim .tour-names{display:none}
+.no-anim:not(.services-motion) .tour-names{display:none}
 
 /* ===== Composez votre voyage ===== */
 .composer{border-top:1px solid var(--ligne)}
@@ -623,16 +623,16 @@ main section[id],#carnet{scroll-margin-top:100px}
 .panel-body{min-height:0;min-width:0;overscroll-behavior-y:contain}
 .panel-close{background:#0a0a0a;border-color:var(--or-clair)}
 .panel-title{overflow-wrap:anywhere}
-.no-anim .scene--tour .portal img:not(:first-child){display:none}
+.no-anim:not(.services-motion) .scene--tour .portal img:not(:first-child){display:none}
 
 /* Sans animation : services dans le flux, sans hauteur limitant la lecture. */
-.no-anim .voyage-stage{height:auto;overflow:visible}
-.no-anim .scene{height:auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);pointer-events:auto;border-top:1px solid var(--ligne)}
-.no-anim .portal{position:relative;inset:auto;min-height:360px;clip-path:none!important}
-.no-anim .portal img{position:absolute;inset:0;height:100%;width:100%;transform:none}
-.no-anim .scene-text,.no-anim .scene--centre .scene-text,[dir=rtl].no-anim .scene--centre .scene-text{position:relative;inset:auto;width:auto;max-width:none;transform:none;text-align:start;padding:56px var(--gutter);border:0;align-self:center;background:var(--noir)}
-.no-anim .scene-text p{margin-left:0;margin-right:0}
-.no-anim .shade{display:none}
+.no-anim:not(.services-motion) .voyage-stage{height:auto;overflow:visible}
+.no-anim:not(.services-motion) .scene{height:auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);pointer-events:auto;border-top:1px solid var(--ligne)}
+.no-anim:not(.services-motion) .portal{position:relative;inset:auto;min-height:360px;clip-path:none!important}
+.no-anim:not(.services-motion) .portal img{position:absolute;inset:0;height:100%;width:100%;transform:none}
+.no-anim:not(.services-motion) .scene-text,.no-anim:not(.services-motion) .scene--centre .scene-text,[dir=rtl].no-anim:not(.services-motion) .scene--centre .scene-text{position:relative;inset:auto;width:auto;max-width:none;transform:none;text-align:start;padding:56px var(--gutter);border:0;align-self:center;background:var(--noir)}
+.no-anim:not(.services-motion) .scene-text p{margin-left:0;margin-right:0}
+.no-anim:not(.services-motion) .shade{display:none}
 .no-anim .coffret-stage{height:auto;min-height:0;padding:90px var(--gutter) 48px;overflow:visible}
 
 /* Téléphones et tablettes : images puis textes, navigation tactile. */
@@ -655,11 +655,11 @@ main section[id],#carnet{scroll-margin-top:100px}
   .kicker{font-size:12px;letter-spacing:.2em;margin-bottom:22px}
   .h2{font-size:clamp(36px,7.2vw,58px);line-height:1.12;max-width:100%;overflow-wrap:anywhere}
   .manifesto-text{font-size:clamp(28px,5.5vw,40px);max-width:100%}
-  .no-anim .v-intro{position:relative;inset:auto;padding:64px var(--gutter) 44px;gap:20px}
+  .no-anim:not(.services-motion) .v-intro{position:relative;inset:auto;padding:64px var(--gutter) 44px;gap:20px}
   .v-intro h2{font-size:clamp(34px,6.6vw,54px)}
-  .no-anim .scene{grid-template-columns:minmax(0,1fr)}
-  .no-anim .portal{min-height:0;height:clamp(220px,58vw,390px)}
-  .no-anim .scene-text,.no-anim .scene--centre .scene-text,[dir=rtl].no-anim .scene--centre .scene-text{padding:28px var(--gutter) 40px}
+  .no-anim:not(.services-motion) .scene{grid-template-columns:minmax(0,1fr)}
+  .no-anim:not(.services-motion) .portal{min-height:0;height:clamp(220px,58vw,390px)}
+  .no-anim:not(.services-motion) .scene-text,.no-anim:not(.services-motion) .scene--centre .scene-text,[dir=rtl].no-anim:not(.services-motion) .scene--centre .scene-text{padding:28px var(--gutter) 40px}
   .scene-text h3,.scene--centre .scene-text h3{font-size:clamp(38px,7.8vw,58px);line-height:1.1;margin-top:12px}
   .scene-n{font-size:12px;letter-spacing:.2em}
   .scene-text p{font-size:17px;line-height:1.7;margin:16px 0 18px;max-width:48ch}
@@ -727,6 +727,47 @@ main section[id],#carnet{scroll-margin-top:100px}
 @media (max-height:600px) and (min-width:761px){
   .menu-inner{justify-content:flex-start;padding-top:100px}
   .menu-nav a{font-size:34px;padding:4px 0}
+}
+
+/* Même séquence animée sur téléphone, avec un espace de lecture adapté. */
+@media(max-width:900px),(max-height:600px){
+  .services-motion .voyage-stage{height:100svh;overflow:hidden}
+  .services-motion .v-intro{padding:112px var(--gutter) 108px}
+  .services-motion .v-intro h2{font-size:clamp(30px,6.6vw,52px)}
+  .services-motion .scene-text,.services-motion .scene--centre .scene-text,[dir=rtl].services-motion .scene--centre .scene-text{
+    left:var(--gutter);right:var(--gutter);bottom:86px;width:auto;max-width:none;
+    transform:none;text-align:start;padding:16px 18px;max-height:calc(100% - 176px);
+    overflow-y:auto;overscroll-behavior-y:auto;background:rgba(10,10,10,.94)
+  }
+  .services-motion .scene-text h3,.services-motion .scene--centre .scene-text h3{font-size:clamp(28px,7vw,46px);line-height:1.12;margin:8px 0 5px}
+  .services-motion .scene-text p{font-size:15px;line-height:1.55;margin:10px 0 12px;max-width:none}
+  .services-motion .scene-en{font-size:20px;line-height:1.35}
+  .services-motion .scene-n{font-size:11px}
+  .services-motion .scene-text .lien{min-height:44px;font-size:11px;letter-spacing:.14em}
+  .services-motion .voyage-hud{left:8px;right:8px;bottom:max(12px,env(safe-area-inset-bottom));display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;padding:4px 8px}
+  .services-motion .hud-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;min-width:0}
+  .services-motion .hud-list li{min-width:0}
+  .services-motion .hud-list button{width:100%;min-height:44px;padding:7px 0;font-size:10px;line-height:1.3;letter-spacing:.06em;overflow-wrap:anywhere}
+  .services-motion .hud-skip{padding:12px 0 12px 8px;min-height:44px;font-size:10px;letter-spacing:.06em}
+  .services-motion .tour-names{top:92px;font-size:26px}
+  .services-motion .tour-names::before{display:none}
+  .services-motion .tour-names span{padding:4px 14px}
+  .services-motion .scene-text .btn{padding:12px 16px;min-height:44px;font-size:11px;letter-spacing:.1em}
+  html[lang=ar].services-motion .hud-list button,html[lang=ar].services-motion .hud-skip{font-size:11px;letter-spacing:0}
+  html[lang=ar].services-motion .scene-text h3{font-size:clamp(28px,6.5vw,40px);line-height:1.3}
+  html[lang=ar].services-motion .scene-n{font-size:11px}
+}
+@media(max-width:360px){
+  .services-motion .scene-text,.services-motion .scene--centre .scene-text,[dir=rtl].services-motion .scene--centre .scene-text{padding:13px 14px}
+  .services-motion .scene-text p{font-size:14px}
+  .services-motion .scene-en{font-size:18px}
+}
+@media(max-height:600px) and (min-width:600px){
+  .services-motion .scene-text,.services-motion .scene--centre .scene-text,[dir=rtl].services-motion .scene--centre .scene-text{padding:10px 16px;bottom:72px;max-height:calc(100% - 152px)}
+  .services-motion .scene-text h3{font-size:28px;margin:4px 0}
+  .services-motion .scene-text p{font-size:13px;line-height:1.4;margin:6px 0}
+  .services-motion .scene-en{font-size:17px}
+  .services-motion .tour-names{top:78px;font-size:22px}
 }
 
 /* Les décorations du coffret ne capturent plus les clics. */
@@ -1738,64 +1779,17 @@ html[lang=ar] .brochure-card .btn,html[lang=ar] .card-hint,html[lang=ar] .member
     form.classList.add('is-sent');
   });
 
-  /* ---------- Animations ---------- */
-  const hideLoader = () => { const l = $('#loader'); if (l) l.remove(); body.classList.remove('is-loading'); };
-  if (!anim) {
-    hideLoader();
-    $$('.hud-list button').forEach(b => b.addEventListener('click', () => goTo($$('.scene')[+b.dataset.go])));
-    return;
-  }
-
-  let introDone = false;
-  const intro = () => {
-    if (introDone) return; introDone = true;
-    if (lenis) lenis.start();
-    gsap.timeline()
-      .from('.header', { yPercent: -100, opacity: 0, duration: 1.1, ease: 'expo.out', clearProps: 'transform,opacity' }, .1)
-      .to('.hero-title .line > span', { y: 0, duration: 1.6, ease: 'expo.out', stagger: .14 }, 0)
-      .from('.hero-row > *, .clocks', { opacity: 0, y: 26, duration: 1.2, ease: 'expo.out', stagger: .1, clearProps: 'transform,opacity' }, .5);
-  };
-
-  try {
-    gsap.set('.loader .wordmark', { letterSpacing: '.2em' });
-    gsap.timeline({ onComplete: hideLoader })
-      .to('.loader-medal', { opacity: 1, scale: 1, rotate: 0, duration: 1.4, ease: 'expo.out' })
-      .add(() => $('.loader-medal').classList.add('shine'), .5)
-      .to('.loader .wordmark', { opacity: 1, letterSpacing: '.5em', duration: 1.2, ease: 'power2.out' }, .45)
-      .to('.loader-inner', { opacity: 0, y: -20, duration: .5, ease: 'power2.in' }, '+=.3')
-      .to('#loader', { clipPath: 'inset(0 0 100% 0)', duration: 1.1, ease: 'expo.inOut' }, '-=.05')
-      .add(intro, '-=.65');
-    setTimeout(() => { if ($('#loader')) { hideLoader(); intro(); } }, 6000);
-
-    /* --- Hero : l'image respire et suit la souris ; la section suivante la recouvre comme un rideau --- */
-    if (fine) {
-      const hx = gsap.quickTo('.hero-media', 'x', { duration: 1.6, ease: 'power3' }), hy = gsap.quickTo('.hero-media', 'y', { duration: 1.6, ease: 'power3' });
-      $('.hero').addEventListener('mousemove', e => { hx((e.clientX / innerWidth - .5) * -30); hy((e.clientY / innerHeight - .5) * -20); });
-    }
-    ScrollTrigger.create({ trigger: '.hero', start: 'top top', end: 'bottom top', pin: true, pinSpacing: false });
-    gsap.to('.hero-frame', { scale: .9, opacity: .25, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
-    gsap.to('.hero-content', { yPercent: -30, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
-
-    /* --- Titres au masque, apparitions --- */
-    $$('[data-mask]').forEach(el => gsap.to($('.mask > span', el), { y: 0, duration: 1.4, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } }));
-    ScrollTrigger.batch('[data-reveal]', { start: 'top 90%', once: true, onEnter: els => gsap.to(els, { opacity: 1, y: 0, duration: 1.2, ease: 'expo.out', stagger: .09 }) });
-
-    /* --- Images : rideau qui se lève, puis parallaxe continue --- */
-    $$('.reveal').forEach(fig => {
-      const img = $('img', fig);
-      gsap.timeline({ scrollTrigger: { trigger: fig, start: 'top 82%', once: true } })
-        .to(fig, { clipPath: 'inset(0% 0 0 0)', duration: 1.6, ease: 'expo.inOut' })
-        .from(img, { scale: 1.35, duration: 2.2, ease: 'expo.out' }, 0);
-      if (fig.hasAttribute('data-parallax')) gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: fig, start: 'top bottom', end: 'bottom top', scrub: true } });
-    });
-
-    /* --- Le médaillon tourne lentement au fil de la lecture --- */
-    gsap.fromTo('.apropos-medal .medal', { rotate: -25 }, { rotate: 25, ease: 'none', scrollTrigger: { trigger: '.apropos', start: 'top bottom', end: 'bottom top', scrub: true } });
-    gsap.from('.apropos-medal', { opacity: 0, scale: .85, duration: 1.8, ease: 'expo.out', scrollTrigger: { trigger: '.apropos-medal', start: 'top 85%', once: true } });
-
-    /* --- Trait d'or qui se trace avant la liste des services --- */
-    gsap.to('.rule', { scaleX: 1, ease: 'none', scrollTrigger: { trigger: '.rule', start: 'top 95%', end: 'top 45%', scrub: true } });
-
+  /* Les services gardent leur séquence immersive, même avec la mise en page mobile. */
+  let serviceContext = null;
+  const setupServiceTransitions = () => {
+    if(serviceContext) { serviceContext.revert(); serviceContext = null; }
+    if(reduced || !window.gsap || !window.ScrollTrigger) { root.classList.remove('services-motion'); return; }
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.config({ ignoreMobileResize: true });
+    root.classList.add('services-motion');
+    try {
+      serviceContext = gsap.context(() => {});
+      serviceContext.add(() => {
     /* ===================== Le voyage ===================== */
     const W = () => stage.clientWidth, H = () => stage.clientHeight;
     const px = a => a.map(v => v.toFixed(1) + 'px').join(' ');
@@ -1813,7 +1807,11 @@ html[lang=ar] .brochure-card .btn,html[lang=ar] .card-hint,html[lang=ar] .member
       onUpdate: () => {
         const t = tl.time(); let idx = -1;
         VOYAGE.forEach((_, i) => { if (t >= tl.labels['open' + i] + .5) idx = i; });
-        $$('.hud-list button').forEach((b, i) => b.classList.toggle('is-active', i === idx));
+        $$('.hud-list button').forEach((b, i) => {
+          b.classList.toggle('is-active', i === idx);
+          if(i === idx) b.setAttribute('aria-current','true'); else b.removeAttribute('aria-current');
+        });
+        scenes.forEach((scene,i) => { scene.inert = i !== idx; });
       }
     });
     tl.to({}, { duration: .5 });
@@ -1895,21 +1893,115 @@ html[lang=ar] .brochure-card .btn,html[lang=ar] .card-hint,html[lang=ar] .member
     tl.to([...$$('.portal img', scenes[3]), parts(scenes[3]).txt, parts(scenes[3]).shade, $('.tour-names', scenes[3])], { opacity: 0, duration: .6, ease: 'power2.in' });
 
     const st = ScrollTrigger.create({
-      animation: tl, trigger: '.voyage', start: 'top top',
+      id: 'service-voyage', animation: tl, trigger: '.voyage', start: 'top top',
       end: () => '+=' + Math.round(tl.duration() * innerHeight * (isPhone() ? .55 : .62)),
       pin: true, scrub: 1, invalidateOnRefresh: true, anticipatePin: 1
     });
-    $$('.hud-list button').forEach(b => b.addEventListener('click', () => {
-      const t = tl.labels['show' + b.dataset.go] + .45;
-      scrollToY(st.start + (st.end - st.start) * (t / tl.duration()));
-    }));
+    const handlers = $$('.hud-list button').map(button => {
+      const click = () => {
+        const t = tl.labels['show' + button.dataset.go] + .45;
+        scrollToY(st.start + (st.end - st.start) * (t / tl.duration()));
+      };
+      button.addEventListener('click',click);
+      return [button,click];
+    });
+    return () => {
+      handlers.forEach(([button,click]) => { button.removeEventListener('click',click); button.classList.remove('is-active'); button.removeAttribute('aria-current'); });
+      scenes.forEach(scene => { scene.inert = false; });
+    };
+
+
+      });
+    } catch(err) {
+      console.error(err); root.classList.remove('services-motion'); root.classList.add('no-anim');
+      if(serviceContext) { serviceContext.revert(); serviceContext = null; }
+    }
+  };
+
+  /* ---------- Animations ---------- */
+  const hideLoader = () => { const l = $('#loader'); if (l) l.remove(); body.classList.remove('is-loading'); };
+  compactLayout.addEventListener('change', () => {
+    if(reduced || !window.gsap || !window.ScrollTrigger) return;
+    if(serviceContext) { serviceContext.revert(); serviceContext = null; }
+    if(compactLayout.matches && anim) {
+      anim = false;
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill(true));
+      gsap.killTweensOf('*'); gsap.ticker.remove(lenisTick);
+      if(lenis) { lenis.destroy(); lenis = null; }
+      root.classList.add('no-anim');
+      gsap.set('.header, .hero-frame, .hero-content, .hero-title .line > span, .hero-row > *, .clocks, [data-reveal], .mask > span, .reveal, .reveal img, .apropos-medal, .apropos-medal .medal, .rule, .coffret-title, .coffret, .lid, .card-lift, .box, .card-hint, .fondateur-inner, .footer-brand .medal, .footer-brand .wordmark', { clearProps: 'transform,opacity,visibility,clipPath' });
+      hideLoader();
+    }
+    setupServiceTransitions(); ScrollTrigger.refresh();
+  });
+  if (!anim) {
+    hideLoader();
+    setupServiceTransitions();
+    if(window.ScrollTrigger) {
+      if(document.fonts) document.fonts.ready.then(() => ScrollTrigger.refresh());
+      addEventListener('load', () => ScrollTrigger.refresh());
+    }
+    return;
+  }
+
+  let introDone = false;
+  const intro = () => {
+    if (introDone) return; introDone = true;
+    if (lenis) lenis.start();
+    gsap.timeline()
+      .from('.header', { yPercent: -100, opacity: 0, duration: 1.1, ease: 'expo.out', clearProps: 'transform,opacity' }, .1)
+      .to('.hero-title .line > span', { y: 0, duration: 1.6, ease: 'expo.out', stagger: .14 }, 0)
+      .from('.hero-row > *, .clocks', { opacity: 0, y: 26, duration: 1.2, ease: 'expo.out', stagger: .1, clearProps: 'transform,opacity' }, .5);
+  };
+
+  try {
+    gsap.set('.loader .wordmark', { letterSpacing: '.2em' });
+    gsap.timeline({ onComplete: hideLoader })
+      .to('.loader-medal', { opacity: 1, scale: 1, rotate: 0, duration: 1.4, ease: 'expo.out' })
+      .add(() => $('.loader-medal').classList.add('shine'), .5)
+      .to('.loader .wordmark', { opacity: 1, letterSpacing: '.5em', duration: 1.2, ease: 'power2.out' }, .45)
+      .to('.loader-inner', { opacity: 0, y: -20, duration: .5, ease: 'power2.in' }, '+=.3')
+      .to('#loader', { clipPath: 'inset(0 0 100% 0)', duration: 1.1, ease: 'expo.inOut' }, '-=.05')
+      .add(intro, '-=.65');
+    setTimeout(() => { if ($('#loader')) { hideLoader(); intro(); } }, 6000);
+
+    /* --- Hero : l'image respire et suit la souris ; la section suivante la recouvre comme un rideau --- */
+    if (fine) {
+      const hx = gsap.quickTo('.hero-media', 'x', { duration: 1.6, ease: 'power3' }), hy = gsap.quickTo('.hero-media', 'y', { duration: 1.6, ease: 'power3' });
+      $('.hero').addEventListener('mousemove', e => { hx((e.clientX / innerWidth - .5) * -30); hy((e.clientY / innerHeight - .5) * -20); });
+    }
+    ScrollTrigger.create({ trigger: '.hero', start: 'top top', end: 'bottom top', pin: true, pinSpacing: false });
+    gsap.to('.hero-frame', { scale: .9, opacity: .25, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+    gsap.to('.hero-content', { yPercent: -30, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+
+    /* --- Titres au masque, apparitions --- */
+    $$('[data-mask]').forEach(el => gsap.to($('.mask > span', el), { y: 0, duration: 1.4, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } }));
+    ScrollTrigger.batch('[data-reveal]', { start: 'top 90%', once: true, onEnter: els => gsap.to(els, { opacity: 1, y: 0, duration: 1.2, ease: 'expo.out', stagger: .09 }) });
+
+    /* --- Images : rideau qui se lève, puis parallaxe continue --- */
+    $$('.reveal').forEach(fig => {
+      const img = $('img', fig);
+      gsap.timeline({ scrollTrigger: { trigger: fig, start: 'top 82%', once: true } })
+        .to(fig, { clipPath: 'inset(0% 0 0 0)', duration: 1.6, ease: 'expo.inOut' })
+        .from(img, { scale: 1.35, duration: 2.2, ease: 'expo.out' }, 0);
+      if (fig.hasAttribute('data-parallax')) gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: fig, start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
+
+    /* --- Le médaillon tourne lentement au fil de la lecture --- */
+    gsap.fromTo('.apropos-medal .medal', { rotate: -25 }, { rotate: 25, ease: 'none', scrollTrigger: { trigger: '.apropos', start: 'top bottom', end: 'bottom top', scrub: true } });
+    gsap.from('.apropos-medal', { opacity: 0, scale: .85, duration: 1.8, ease: 'expo.out', scrollTrigger: { trigger: '.apropos-medal', start: 'top 85%', once: true } });
+
+    /* --- Trait d'or qui se trace avant la liste des services --- */
+    gsap.to('.rule', { scaleX: 1, ease: 'none', scrollTrigger: { trigger: '.rule', start: 'top 95%', end: 'top 45%', scrub: true } });
+
+    setupServiceTransitions();
 
     /* ===================== Le coffret s'ouvre ===================== */
     const ctl = gsap.timeline({ defaults: { ease: 'none' }, paused: true })
       .fromTo('.coffret-title', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .5, ease: 'power2.out' })
       .fromTo('.coffret', { y: 60, scale: .94 }, { y: 0, scale: 1, duration: .6, ease: 'power2.out' }, 0)
       .to('.lid', { yPercent: -45, rotationX: 70, opacity: 0, duration: .9, ease: 'power2.in' }, .5)
-      .fromTo('.card-lift', { scale: .9, y: 0 }, { scale: 1.06, y: () => -(H() * .02), duration: 1, ease: 'power2.out' }, 1.2)
+      .fromTo('.card-lift', { scale: .9, y: 0 }, { scale: 1.06, y: () => -(stage.clientHeight * .02), duration: 1, ease: 'power2.out' }, 1.2)
       .to('.box', { opacity: 0, scale: 1.04, duration: .8, ease: 'power2.inOut' }, 1.4)
       .to('.card-hint', { opacity: 1, duration: .3 }, 1.9);
     memberReveal = ctl;
@@ -1923,17 +2015,6 @@ html[lang=ar] .brochure-card .btn,html[lang=ar] .card-hint,html[lang=ar] .member
     gsap.from('.footer-brand .medal', { rotate: -40, scale: .8, opacity: 0, duration: 1.8, ease: 'expo.out', scrollTrigger: { trigger: '.footer', start: 'top 80%' } });
     gsap.from('.footer-brand .wordmark', { letterSpacing: '.15em', opacity: 0, duration: 1.8, ease: 'expo.out', scrollTrigger: { trigger: '.footer', start: 'top 80%' } });
 
-    compactLayout.addEventListener('change', e => {
-      if (!e.matches || !anim) return;
-      anim = false;
-      ScrollTrigger.getAll().forEach(t => t.kill(true));
-      gsap.killTweensOf('*');
-      gsap.ticker.remove(lenisTick);
-      if (lenis) { lenis.destroy(); lenis = null; }
-      root.classList.add('no-anim');
-      gsap.set('.header, .hero-frame, .hero-content, .hero-title .line > span, .hero-row > *, .clocks, [data-reveal], .mask > span, .reveal, .reveal img, .apropos-medal, .apropos-medal .medal, .rule, .v-intro, .scene, .portal, .portal img, .scene-text, .shade, .coffret-title, .coffret, .lid, .card-lift, .box, .card-hint, .fondateur-inner, .footer-brand .medal, .footer-brand .wordmark', { clearProps: 'transform,opacity,visibility,clipPath' });
-      hideLoader();
-    });
     if (document.fonts) document.fonts.ready.then(() => ScrollTrigger.refresh());
     addEventListener('load', () => ScrollTrigger.refresh());
   } catch (err) {
